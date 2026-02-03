@@ -9,8 +9,8 @@ from src.service import save_to_json_file
 def contacts_for_test():
     test_contacts = {
         "url": "https://www.example.com",
-        "phones": ["8-900-777-66-55"],
         "emails": ["example_1@mail.com", "example_2@mail.ru"],
+        "phones": ["8-900-777-66-55"],
     }
     return test_contacts
 
