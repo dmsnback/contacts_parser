@@ -4,9 +4,8 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from src.found_contacts import found_emails, found_phones
 from src.config_logger import setup_logger
-
+from src.found_contacts import found_emails, found_phones
 
 setup_logger()
 logger = logging.getLogger(__name__)
