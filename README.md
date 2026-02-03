@@ -2,7 +2,7 @@
 
 ## Contacts Parser
 
-[![Contacts Parser Lint and Tests](https://img.shields.io/github/actions/workflow/status/dmsnback/contacts_parser/main.yml?branch=main&style=flat-square&label=Contacts%Parser%20Lint%20and%20Tests)](https://github.com/dmsnback/contacts_parser/actions/workflows/main.yml)
+[![Contacts Parser Lint and Tests](https://img.shields.io/github/actions/workflow/status/dmsnback/contacts_parser/main.yml?branch=main&style=flat-square&label=Contacts%20Parser%20Lint%20and%20Tests)](https://github.com/dmsnback/contacts_parser/actions/workflows/main.yml)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Tests](https://img.shields.io/badge/tests-pytest-brightgreen)
 ![Black](https://img.shields.io/badge/code%20style-black-000000)
