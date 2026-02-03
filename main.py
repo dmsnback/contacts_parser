@@ -1,7 +1,7 @@
 import argparse
 import logging
 
-from src.logger import setup_logger
+from src.config_logger import setup_logger
 from src.parser_contacts import parse_contacts
 from src.service import save_to_json_file
 
@@ -10,6 +10,8 @@ logger = logging.getLogger(__name__)
 
 
 def main():
+    logging.info('Парсер запущен')
+    
     parser = argparse.ArgumentParser(description="Парсер контактов сайта")
     parser.add_argument(
         "start_url",
@@ -17,6 +19,7 @@ def main():
         help="URL сайта в форматe https://www.example.com",
     )
     args = parser.parse_args()
+    logger.info(f'Аргументы командной строки: {args}')
     start_url = args.start_url
     contacts = parse_contacts(start_url)
     site_name = start_url.split(".")[1]

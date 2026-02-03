@@ -4,9 +4,9 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from src.config import TIMEOUT
 from src.found_contacts import found_emails, found_phones
-from src.logger import setup_logger
+from src.config_logger import setup_logger
+
 
 setup_logger()
 logger = logging.getLogger(__name__)
@@ -24,7 +24,7 @@ def parse_contacts(start_url, max_pages=50):
         if url in visited_page:
             continue
         try:
-            response = requests.get(url, timeout=TIMEOUT)
+            response = requests.get(url, timeout=10)
             response.raise_for_status()
         except requests.RequestException as e:
             logger.error(f"Ошибка при загрузке страницы: {e}")
