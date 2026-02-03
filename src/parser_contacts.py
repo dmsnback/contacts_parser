@@ -54,8 +54,8 @@ def parse_contacts(start_url, max_pages=50):
 
     contacts = {
         "url": start_url,
-        "phones": list(phones),
         "emails": list(emails),
+        "phones": list(phones),
     }
 
     return contacts
